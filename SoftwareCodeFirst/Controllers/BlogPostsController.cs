@@ -11,6 +11,7 @@ namespace SoftwareCodeFirst.Controllers
         // GET: BlogPosts
         public ActionResult Index()
         {
+            //Creamos un DbContext que se va a encargar las operaciones de BD
             return View();
         }
 
