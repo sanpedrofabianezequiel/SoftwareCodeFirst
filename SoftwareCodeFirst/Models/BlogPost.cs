@@ -17,5 +17,7 @@ namespace SoftwareCodeFirst.Models
         [StringLength(100)]
         public string Autor { get; set; }
         public DateTime Publicacion { get; set; }
+        //Aca cada BlogPost le corresponde un comentario
+        public List<Comentarios> Comentarios { get; set; }
     }
 }

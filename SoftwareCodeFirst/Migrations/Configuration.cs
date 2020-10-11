@@ -15,10 +15,7 @@
 
         protected override void Seed(SoftwareCodeFirst.Models.BlogContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            //Comando que se ejecuta cada vez que uso UPDATE-DATABASE
         }
     }
 }
