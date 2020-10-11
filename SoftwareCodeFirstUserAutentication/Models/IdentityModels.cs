@@ -21,7 +21,7 @@ namespace SoftwareCodeFirstUserAutentication.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("BlogPostsDbUserAutentication", throwIfV1Schema: false)
         {
         }
 
