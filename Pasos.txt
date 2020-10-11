@@ -1,0 +1,21 @@
+Code First
+Paso a Paso
+
+Crear un Modelo
+Installar EntityFrameWork
+Crear un DbContext con su DbSet del tipo Modelo a eleccion
+(Indicar en el contructor del DbContext nombre de la conexion)
+Crear la conexion en Web.Config
+Consola Nugget
+	Enable-Migrations
+	Add-Migration MyNombre
+	Update-Database -Verbose
+
+----------------------
+Si se modifica algo, podemos eliminar la base y volver a a crear o
+crear una nueva migracion
+	Add-Migration MyNombre2
+	Update-Database -Verbose
+---------------------------------------------------------------
+Otra opcion seria sin crear una nueva migracion
+	Update-Database -Force -Verbose
