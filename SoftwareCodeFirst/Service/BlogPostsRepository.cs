@@ -22,7 +22,10 @@ namespace SoftwareCodeFirst.Service
                 //En esta Instancia le realizamos una Query a la 
                 //BD y la query
                 //ToList => devuelve todo
-                return db.BlogPosts.ToList();
+                //.INCLUDE permite traer los items FK especificados
+                //Crear Using de Entity para usar Lambda en INCLUDE(using System.Data.Entity;)
+                //EJ: x=> x.Comentarios
+                return db.BlogPosts.Include(x=>x.Comentarios).ToList();
             }
         }
 
