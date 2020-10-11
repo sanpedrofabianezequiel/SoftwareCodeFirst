@@ -10,7 +10,7 @@ namespace SoftwareCodeFirst.Models
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [StringLength(200)]
+        [StringLength(300,MinimumLength =100,ErrorMessage = "Longituda del {0} debe ser como minimo {2} y maximo {1}")]
         public string Titulo { get; set; }
         [Required]
         public string Contenido { get; set; }
