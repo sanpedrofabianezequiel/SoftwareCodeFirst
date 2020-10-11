@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SoftwareCodeFirst.Models;
+using SoftwareCodeFirst.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +10,24 @@ namespace SoftwareCodeFirst.Controllers
 {
     public class BlogPostsController : Controller
     {
+        //Utilizamos un Service que le pega a la BD con DbContext
+        private BlogPostsRepository _repository;
+
+        //Constructor
+        public BlogPostsController()
+        {
+            _repository = new BlogPostsRepository();
+        }
+
+
+
         // GET: BlogPosts
         public ActionResult Index()
         {
-            //Creamos un DbContext que se va a encargar las operaciones de BD
-            return View();
+
+           var lista = _repository.ObtenerTodos();
+
+            return View(lista);
         }
 
         // GET: BlogPosts/Details/5
@@ -29,18 +44,25 @@ namespace SoftwareCodeFirst.Controllers
 
         // POST: BlogPosts/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(BlogPost collection)
         {
             try
             {
                 // TODO: Add insert logic here
+                //Verificamos el estado de el create
+                if (ModelState.IsValid)
+                {
+                    _repository.Crear(collection);
+                    return RedirectToAction("Index");
+                }
 
-                return RedirectToAction("Index");
+               
             }
-            catch
+            catch(Exception ex)
             {
-                return View();
+                //Error
             }
+            return View(collection);
         }
 
         // GET: BlogPosts/Edit/5
