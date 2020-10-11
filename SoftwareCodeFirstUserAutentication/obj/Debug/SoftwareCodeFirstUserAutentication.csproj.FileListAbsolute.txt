@@ -125,3 +125,5 @@ C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication\obj\Debug\SoftwareCodeFirstUserAutentication.csproj.CopyComplete
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication\obj\Debug\SoftwareCodeFirstUserAutentication.dll
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication\obj\Debug\SoftwareCodeFirstUserAutentication.pdb
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication\obj\Debug\SoftwareCodeFirstUserAutentication.Migrations.Primera.resources
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirstUserAutentication\obj\Debug\SoftwareCodeFirstUserAutentication.csproj.GenerateResource.cache

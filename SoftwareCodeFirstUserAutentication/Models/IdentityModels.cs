@@ -25,6 +25,9 @@ namespace SoftwareCodeFirstUserAutentication.Models
         {
         }
 
+
+        public DbSet<BlogPost> BlogPosts { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
