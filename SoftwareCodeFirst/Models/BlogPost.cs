@@ -9,7 +9,7 @@ namespace SoftwareCodeFirst.Models
     public class BlogPost
     {
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         [StringLength(200)]
         public string Titulo { get; set; }
         [Required]
