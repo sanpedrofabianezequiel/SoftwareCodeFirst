@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -19,5 +21,11 @@ namespace SoftwareCodeFirst.Models
         public DateTime Publicacion { get; set; }
         //Aca cada BlogPost le corresponde un comentario
         public List<Comentarios> Comentarios { get; set; }
+        [DisplayName("Email")]
+        public string Email { get; set; }
+        [NotMapped]
+        [DisplayName("Email Confirmacion")]
+        [Compare("Email",ErrorMessage = "El campo {0} no concuerda")]
+        public string ConfirmarEmail { get; set; }
     }
 }
