@@ -11,12 +11,14 @@ namespace SoftwareCodeFirst.Models
         public int Id { get; set; }
         public string Contenido { get; set; }
         public string Autor { get; set; }
+        #region Vinculacion
         //Vinculacion o relacion con el BlogPost
         //Acada comentario le corresponde un BlogPost
         public int BlogPostId { get; set; }
         //Entity=> propiedad NAVIGACIONAL
         [ForeignKey("BlogPostId")]
         public BlogPost BlogPost { get; set; }
+        #endregion
     }
 
 }
