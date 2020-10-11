@@ -25,9 +25,12 @@ namespace SoftwareCodeFirst.Controllers
         public ActionResult Index()
         {
 
-           var lista = _repository.ObtenerTodos();
+           var listaBlogs = _repository.ObtenerTodos();
+            //Le indicamos que del primer BlogPost de la lista,traiga el
+            //primer comentario
+            var comentario = listaBlogs[0].Comentarios[0];
 
-            return View(lista);
+            return View(listaBlogs);
         }
 
         // GET: BlogPosts/Details/5
