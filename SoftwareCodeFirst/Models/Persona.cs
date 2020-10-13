@@ -26,8 +26,8 @@ namespace SoftwareCodeFirst.Models
         [CreditCard(ErrorMessage = "Tarjeta Invalida")]
         public string TarjetaDeCredito { get; set; }
 
-        [Remote("AccionPropia", "Persona",ErrorMessage ="El numero no es divisible por 2")]
-        [DivisibleEntre(2)]
+        [Remote("AccionPropia", "Persona",ErrorMessage ="El numero no es divisible por 2")]//Validacion en JQUERY
+        [DivisibleEntre(2)] //Validacion en SERVIDOR con clase Propia
         public int NumeroDivisibleEntre2 { get; set; }
     }
 }
