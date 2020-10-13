@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SoftwareCodeFirst.Models.Validaciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -26,6 +27,7 @@ namespace SoftwareCodeFirst.Models
         public string TarjetaDeCredito { get; set; }
 
         [Remote("AccionPropia", "Persona",ErrorMessage ="El numero no es divisible por 2")]
+        [DivisibleEntre(2)]
         public int NumeroDivisibleEntre2 { get; set; }
     }
 }

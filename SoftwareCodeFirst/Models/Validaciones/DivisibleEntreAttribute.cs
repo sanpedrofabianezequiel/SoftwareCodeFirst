@@ -13,6 +13,7 @@ namespace SoftwareCodeFirst.Models.Validaciones
         //2 verifamos que no sea null y casteamos en el IF
         //3 enviamos en el var miResul= FormatErroMessage(Validationcontexto.displayname)
         //4 retornamos una NUEVA =>NEW instancia de VALIDATIONRESULT(mensaje)
+        //5 llamamos a la clase como una anotacion en mi MODELO
         public DivisibleEntreAttribute(int dividendo) : base("Number {0} is't valid")
         {
             this._dividendo=dividendo;
