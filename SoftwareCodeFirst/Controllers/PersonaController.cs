@@ -30,9 +30,9 @@ namespace SoftwareCodeFirst.Controllers
             return View();
         }
 
-        public JsonResult AccionPropia(int numeroR)
+        public JsonResult AccionPropia(int NumeroDivisibleEntre2)
         {
-            var validacion = numeroR % 2 == 0;
+            var validacion = NumeroDivisibleEntre2 % 2 == 0;
             return Json(validacion, JsonRequestBehavior.AllowGet);
         }
 
