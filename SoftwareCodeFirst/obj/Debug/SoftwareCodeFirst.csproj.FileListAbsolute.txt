@@ -83,10 +83,10 @@ C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\bin\es\System.We
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\bin\es\System.Web.WebPages.resources.dll
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csprojAssemblyReference.cache
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csproj.CoreCompileInputs.cache
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csproj.CopyComplete
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.dll
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.pdb
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.Migrations.primera.resources
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csproj.GenerateResource.cache
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csprojAssemblyReference.cache

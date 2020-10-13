@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogPostsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -140,8 +141,10 @@
     <Compile Include="Models\BlogContext.cs" />
     <Compile Include="Models\BlogPost.cs" />
     <Compile Include="Models\Comentarios.cs" />
+    <Compile Include="Models\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\BlogPostsRepository.cs" />
+    <Compile Include="Service\PersonasRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -181,6 +184,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\BlogPosts\Index.cshtml" />
     <Content Include="Views\BlogPosts\Create.cshtml" />
+    <Content Include="Views\Persona\Index.cshtml" />
+    <Content Include="Views\Persona\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

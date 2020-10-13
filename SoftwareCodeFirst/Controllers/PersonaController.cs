@@ -8,73 +8,68 @@ using System.Web.Mvc;
 
 namespace SoftwareCodeFirst.Controllers
 {
-    public class BlogPostsController : Controller
+    public class PersonaController : Controller
     {
-        //Utilizamos un Service que le pega a la BD con DbContext
-        private BlogPostsRepository _repository;
+        private PersonasRepository _repository;
 
-        //Constructor
-        public BlogPostsController()
+        public  PersonaController() //Constructor
         {
-           this._repository = new BlogPostsRepository();
+
+            this._repository = new PersonasRepository();
         }
-
-
-
-        // GET: BlogPosts
+        // GET: Persona
         public ActionResult Index()
         {
-
-           var listaBlogs = _repository.ObtenerTodos();
-            //Le indicamos que del primer BlogPost de la lista,traiga el
-            //primer comentario
-            var comentario = listaBlogs[0].Comentarios[0];
-
-            return View(listaBlogs);
+            var resul= _repository.obtenerTodos();
+            return View(resul);
         }
 
-        // GET: BlogPosts/Details/5
+        // GET: Persona/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: BlogPosts/Create
+        public JsonResult AccionPropia(int numeroR)
+        {
+            var validacion = numeroR % 2 == 0;
+            return Json(validacion, JsonRequestBehavior.AllowGet);
+        }
+
+        // GET: Persona/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: BlogPosts/Create
+        // POST: Persona/Create
         [HttpPost]
-        public ActionResult Create(BlogPost collection)
+        public ActionResult Create(Persona collection)
         {
             try
             {
-                // TODO: Add insert logic here
-                //Verificamos el estado de el create
                 if (ModelState.IsValid)
                 {
                     _repository.Crear(collection);
                     return RedirectToAction("Index");
-                }
+                }   
 
-               
+                
             }
-            catch(Exception ex)
-            {
-                //Error
+            catch
+            {//Si da error enviamos la misma data a la misma view
+                
             }
             return View(collection);
         }
 
-        // GET: BlogPosts/Edit/5
+        // GET: Persona/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: BlogPosts/Edit/5
+        // POST: Persona/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -90,13 +85,13 @@ namespace SoftwareCodeFirst.Controllers
             }
         }
 
-        // GET: BlogPosts/Delete/5
+        // GET: Persona/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: BlogPosts/Delete/5
+        // POST: Persona/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

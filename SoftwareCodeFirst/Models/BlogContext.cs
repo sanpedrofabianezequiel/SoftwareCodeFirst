@@ -14,5 +14,6 @@ namespace SoftwareCodeFirst.Models
         }
         public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<Comentarios> Comentarios { get; set; }
+        public DbSet<Persona> Personas { get; set; }
     }
 }
