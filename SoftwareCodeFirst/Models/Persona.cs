@@ -1,4 +1,5 @@
-﻿using SoftwareCodeFirst.Models.Validaciones;
+﻿using Recursos;
+using SoftwareCodeFirst.Models.Validaciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,7 +14,13 @@ namespace SoftwareCodeFirst.Models
         [Key]
         public  int Id { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
+
+        //Indicamos de donde sacamos el recurso,segundo parametro es el campo definido en
+        //el archivo RESX
+        [Display(ResourceType = typeof(Recurso), Name = "Persona_Nombre_Texto_Mostrar")]
+
         public string Nombre { get; set; }
+
         [Display(Name ="Codigo Postal")]
         [StringLength(6,MinimumLength =5,ErrorMessage = "El campo {0} es requerido")]
         public string CodigoPostal { get; set; }
