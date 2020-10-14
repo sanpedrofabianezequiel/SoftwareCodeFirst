@@ -33,3 +33,6 @@ En el MODELO
  //Indicamos de donde sacamos el recurso,segundo parametro es el campo definido en
         //el archivo RESX
         [Display(ResourceType = typeof(Recurso), Name = "Persona_Nombre_Texto_Mostrar")]
+-----
+Para los errores poder cambiar el idioma
+        [Required(ErrorMessageResourceType =typeof(Recurso),ErrorMessageResourceName = "Mensaje_Error_Required")]

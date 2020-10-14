@@ -61,6 +61,15 @@ namespace Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a El campo {0} es requerido.
+        /// </summary>
+        public static string Mensaje_Error_Required {
+            get {
+                return ResourceManager.GetString("Mensaje_Error_Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         public static string Persona_Nombre_Texto_Mostrar {

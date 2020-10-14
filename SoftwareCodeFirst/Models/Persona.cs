@@ -13,8 +13,8 @@ namespace SoftwareCodeFirst.Models
     {
         [Key]
         public  int Id { get; set; }
-        [Required(ErrorMessage = "El campo {0} es requerido")]
-
+        // [Required(ErrorMessage = "El campo {0} es requerido")]
+        [Required(ErrorMessageResourceType =typeof(Recurso),ErrorMessageResourceName = "Mensaje_Error_Required")]
         //Indicamos de donde sacamos el recurso,segundo parametro es el campo definido en
         //el archivo RESX
         [Display(ResourceType = typeof(Recurso), Name = "Persona_Nombre_Texto_Mostrar")]
