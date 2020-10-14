@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace SoftwareCodeFirst.Models
 {
-    public class Persona
+    public class Persona:IValidatableObject
     {
         [Key]
         public  int Id { get; set; }
@@ -29,5 +29,31 @@ namespace SoftwareCodeFirst.Models
         [Remote("AccionPropia", "Persona",ErrorMessage ="El numero no es divisible por 2")]//Validacion en JQUERY
         [DivisibleEntre(2)] //Validacion en SERVIDOR con clase Propia
         public int NumeroDivisibleEntre2 { get; set; }
+
+
+
+
+
+        //Metodos IValidationObject
+        public decimal Salario { get; set; }
+        public decimal MontoSolicitado { get; set; }
+        #region Metodos que se implementa cuando implemento la Interfaz
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            //Creamos un NUEVA =>NEW  listado de validaciones/errores
+            var resultado = new List<ValidationResult>();
+            if (Salario *4 < MontoSolicitado)
+            {
+                //Agregamos un nuevo objeto a la lista, del tipo ValidationResult
+                resultado.Add(new ValidationResult("El monto solicitud no debe exceder 4 veces el Salario",
+                        new string[] {"MontoSolicitado"}
+                        ));
+            }
+
+            //Finalmente retornamos la lista de Errores
+            //Si la lista esta vacia, ASP=>Validation = OK
+            return resultado;
+        }
+        #endregion
     }
 }
