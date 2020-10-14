@@ -28,3 +28,8 @@ Colocarle un NameSpace
 En el WebConfig =>
 
     <globalization enableClientBasedCulture="true" uiCulture="auto" culture="auto" />
+--
+En el MODELO
+ //Indicamos de donde sacamos el recurso,segundo parametro es el campo definido en
+        //el archivo RESX
+        [Display(ResourceType = typeof(Recurso), Name = "Persona_Nombre_Texto_Mostrar")]

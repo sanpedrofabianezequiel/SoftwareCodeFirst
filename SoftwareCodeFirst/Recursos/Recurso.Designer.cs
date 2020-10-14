@@ -61,6 +61,15 @@ namespace Recursos {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        public static string Persona_Nombre_Texto_Mostrar {
+            get {
+                return ResourceManager.GetString("Persona_Nombre_Texto_Mostrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a valor en español.
         /// </summary>
         public static string String1 {
