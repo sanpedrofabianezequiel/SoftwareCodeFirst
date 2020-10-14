@@ -14,6 +14,7 @@ namespace SoftwareCodeFirst.Models
         public  int Id { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]
         public string Nombre { get; set; }
+        [Display(Name ="Codigo Postal")]
         [StringLength(6,MinimumLength =5,ErrorMessage = "El campo {0} es requerido")]
         public string CodigoPostal { get; set; }
         [Range(18,60,ErrorMessage = "La edad tiene que ser mayor a {1}")]
@@ -24,10 +25,12 @@ namespace SoftwareCodeFirst.Models
         [System.ComponentModel.DataAnnotations.Compare("Email",ErrorMessage ="El Email no coincide")]
         public string ConfirmarEmail { get; set; }
         [CreditCard(ErrorMessage = "Tarjeta Invalida")]
+        [Display(Name ="Tarjeta de Credito")]
         public string TarjetaDeCredito { get; set; }
 
         [Remote("AccionPropia", "Persona",ErrorMessage ="El numero no es divisible por 2")]//Validacion en JQUERY
         [DivisibleEntre(2)] //Validacion en SERVIDOR con clase Propia
+        [Display(Name = "Numero Divisible entre 2")]
         public int NumeroDivisibleEntre2 { get; set; }
 
 

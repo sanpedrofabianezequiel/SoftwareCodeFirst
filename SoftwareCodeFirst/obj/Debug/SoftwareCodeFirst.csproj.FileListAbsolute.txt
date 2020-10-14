@@ -90,3 +90,7 @@ C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\Softwa
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.Migrations.primera.resources
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csproj.GenerateResource.cache
 C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.csprojAssemblyReference.cache
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\bin\en-US\SoftwareCodeFirst.resources.dll
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.Recursos.Recurso.resources
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\SoftwareCodeFirst.Recursos.Recurso.en-US.resources
+C:\Users\sanpe\source\repos\SoftwareCodeFirst\SoftwareCodeFirst\obj\Debug\en-US\SoftwareCodeFirst.resources.dll
