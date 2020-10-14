@@ -19,3 +19,12 @@ crear una nueva migracion
 ---------------------------------------------------------------
 Otra opcion seria sin crear una nueva migracion
 	Update-Database -Force -Verbose
+
+-------------------------------------------------------------------------
+CONFIGURACION DE IDIOMA
+crear los Recursos y sus archivos
+Propiedades en Public+suInformacion
+Colocarle un NameSpace
+En el WebConfig =>
+
+    <globalization enableClientBasedCulture="true" uiCulture="auto" culture="auto" />
